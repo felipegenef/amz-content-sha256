@@ -1,7 +1,7 @@
 {
-  "name": "amz-content-sha256",
-  "main": "amz-content-sha256.js",
-  "version": "2.0.1",
+  "name": "hx-ext-amz-content-sha256",
+  "main": "main.js",
+  "version": "1.0.2",
   "scripts": {
     "lint": "eslint test/ext test",
     "lint-fix": "eslint test/ext test --fix",

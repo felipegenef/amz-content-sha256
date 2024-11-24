@@ -1,4 +1,4 @@
-## amz-content-sha256 - htmx Extension
+## HTMX Extension: amz-content-sha256
 
 ### Overview
 
@@ -28,12 +28,16 @@ This issue can occur when using Lambda Function URLs behind CloudFront, as expla
 
 ### Installation
 
-1. Include the extension in your HTML page or JS file.
+1. Include the extension in your HTML page headers.
 2. Add the tag hx-ext="amz-content-sha256" to your desired form or even the document body if you want this behaviour for all post and put requests.
 3. Add a form element that will trigger a POST or PUT request.
 4. When the form is submitted, the extension will automatically compute the SHA-256 hash and add the x-amz-content-sha256 header to the request.
 
 _Example_:
+
+```html
+<script defer src="https://unpkg.com/hx-ext-amz-content-sha256/min.js"></script>
+```
 
 ```html
 <form hx-post="/your-api-endpoint" hx-ext="amz-content-sha256">
